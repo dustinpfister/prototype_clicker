@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>Clicker</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=320, initial-scale=1">
+
+        <!-- game area css for this app -->
+        <style>
+
+body{
+
+    margin:0px;
+    font-family:arial;
+    font-size:10px;
+
+}
+
+#gamearea{
+
+    position: relative;
+    width:320px;
+    height:240px;
+    background-image: url('background_1.png');
+    margin-right:auto;
+    margin-left:auto;
+
+}
+
+#clickarea{
+
+    position: absolute;
+    left: 110px;
+    top: 40px;
+    width: 200px;
+    height: 190px;
+
+    text-align:center;
+
+}
+
+#upgradearea{
+
+    position: absolute;
+    left: 10px;
+    top: 40px;
+    width: 90px;
+    height: 190px;
+
+    text-align:center;
+
+}
+
+#disp{
+
+    position: absolute;
+    left:10px;
+    top: 10px;
+    width:300px;
+    padding: 3px;
+    height:20px;
+    text-align:center;
+
+}
+
+.basictext{
+
+    color: #efefef;
+    font-size:10px;
+
+}
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div id="gamearea">
+
+            <div id="disp" class="basictext"></div>
+            <div id="clickarea" class="basictext"><p>click area.</p></div>
+            <div id="upgradearea" class="basictext"><p>upgrades</p></div>
+
+        </div>
+
+        <script src="js/game.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+
+</html>
